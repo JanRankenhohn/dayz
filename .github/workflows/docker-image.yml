@@ -15,8 +15,6 @@ jobs:
         with:
           # Checkout the repository
           checkout: true
-          # Tag to override default Logic
-          image_tag: latest
           # Use the SHA for the tag.  Overrides the default logic.
           use_sha: true
           # Docker org name.
