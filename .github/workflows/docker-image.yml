@@ -20,9 +20,9 @@ jobs:
           # Use the SHA for the tag.  Overrides the default logic.
           use_sha: true
           # Docker org name.
-          org_name: jf 
+          org_name: janrankenhohn 
           # Name of the docker repository
-          repo_name: janrankenhohn/dayz
+          repo_name: dayz
           # Tag default branch with latest tag instead of branch name.
           use_latest: true
           # Docker user
