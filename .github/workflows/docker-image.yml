@@ -20,7 +20,7 @@ jobs:
           # Name of the docker repository
           repo_name: dayz
           # Tag default branch with latest tag instead of branch name.
-          use_latest: true
+          image_tag: main
           # Docker user
           docker_username: ${{ secrets.DOCKERHUB_USERNAME }}
           # Docker password
