@@ -1,16 +1,25 @@
 import './App.css';
-import MenuAppBar from './features/navigation/MenuBar';
-import MenuIcon from '@mui/icons-material/Menu';
+import {
+  BrowserRouter, Routes, Route, Navigate,
+} from 'react-router-dom';
+import AppLayout from './layouts/AppLayout';
+import GoodMorning from './features/workday/GoodMorning';
 
 /**
- * Main App entry point
+ * Main App Compnent
+ * Includes Routes
  * @return App component
  */
 function App() {
   return (
-    <>
-      <MenuAppBar icon={<MenuIcon />}></MenuAppBar>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AppLayout/>}>
+          <Route index element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<GoodMorning/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
