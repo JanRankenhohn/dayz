@@ -5,6 +5,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
+    'google',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -14,5 +15,8 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "linebreak-style": 0,
+    "require-jsdoc": 1,
+    "valid-jsdoc": 0,
   },
 }
