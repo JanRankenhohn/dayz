@@ -18,5 +18,8 @@ module.exports = {
     "linebreak-style": 0,
     "require-jsdoc": 1,
     "valid-jsdoc": 0,
+    "max-len": 1,
+    "no-unused-vars": 1,
+    "@typescript-eslint/no-unused-vars": 1,
   },
 }
