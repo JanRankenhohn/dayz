@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import GoodMorning from './features/workday/GoodMorning';
+import DayzIntlProvider from './lang/DayzIntlProvider';
 
 /**
  * Main App Compnent
@@ -12,14 +13,16 @@ import GoodMorning from './features/workday/GoodMorning';
  */
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<AppLayout/>}>
-          <Route index element={<Navigate replace to="/home" />} />
-          <Route path="/home" element={<GoodMorning/>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <DayzIntlProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AppLayout/>}>
+            <Route index element={<Navigate replace to="/home" />} />
+            <Route path="/home" element={<GoodMorning/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </DayzIntlProvider>
   );
 }
 
