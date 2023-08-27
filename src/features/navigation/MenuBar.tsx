@@ -9,6 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuBarProps from './MenuBarProps';
 import {Grid} from '@mui/material';
+import dayzLogo from '../../assets/dayz_logo.png'; // Replace with the actual path to your image
 
 /**
  * Menu App Bar
@@ -49,7 +50,7 @@ const MenuAppBar = (props: MenuBarProps) => {
               <Typography variant="h6"
                 component="div"
                 sx={{flexGrow: 1, mt: 1}}>
-                  Logo
+                <img src={dayzLogo} height="30px"></img>
               </Typography>
             </Grid>
             <Grid item xs={2}>

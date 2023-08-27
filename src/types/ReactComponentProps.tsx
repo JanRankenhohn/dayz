@@ -3,8 +3,8 @@ import {ReactNode} from 'react';
 /**
  * Type for DayzIntlProvider
  */
-type DayzIntlProviderProps = {
+type ReactComponentProps = {
   children: ReactNode;
 };
 
-export default DayzIntlProviderProps;
+export default ReactComponentProps;

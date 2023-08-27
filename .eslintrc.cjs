@@ -23,5 +23,6 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": 1,
     'max-len': [1, { code: 100 }],
     'react-refresh/only-export-components':0,
+    '@typescript-eslint/no-explicit-any': 0,
   },
 }

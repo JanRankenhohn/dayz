@@ -1,14 +1,14 @@
 import {useState} from 'react';
-import DayzIntlProviderProps from './DayzIntlProviderProps';
 import locales from './locales';
 import {IntlProvider} from 'react-intl';
 import {IntlUpdateContext} from './useIntlUpdate';
 import messages from './messages';
+import ReactComponentProps from '../types/ReactComponentProps';
 
 /**
  * Custom Intl Provider with context to change locale
  */
-const DayzIntlProvider = ({children}: DayzIntlProviderProps) => {
+const DayzIntlProvider = ({children}: ReactComponentProps) => {
   const locale = locales.ENGLISH;
   const [currentLocale, setCurrentLocale] = useState(locale);
 

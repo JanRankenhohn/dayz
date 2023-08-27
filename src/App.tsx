@@ -5,6 +5,8 @@ import {
 import AppLayout from './layouts/AppLayout';
 import GoodMorning from './features/workday/GoodMorning';
 import DayzIntlProvider from './lang/DayzIntlProvider';
+import DayzThemeProvider from './theming/DayzThemeProvider';
+import {QueryClient, QueryClientProvider} from 'react-query';
 
 /**
  * Main App Compnent
@@ -12,17 +14,23 @@ import DayzIntlProvider from './lang/DayzIntlProvider';
  * @return App component
  */
 function App() {
+  const queryClient = new QueryClient();
+
   return (
-    <DayzIntlProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<AppLayout/>}>
-            <Route index element={<Navigate replace to="/home" />} />
-            <Route path="/home" element={<GoodMorning/>} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </DayzIntlProvider>
+    <QueryClientProvider client={queryClient}>
+      <DayzIntlProvider>
+        <DayzThemeProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<AppLayout/>}>
+                <Route index element={<Navigate replace to="/home" />} />
+                <Route path="/home" element={<GoodMorning/>} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </DayzThemeProvider>
+      </DayzIntlProvider>
+    </QueryClientProvider>
   );
 }
 
