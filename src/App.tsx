@@ -7,6 +7,7 @@ import GoodMorning from './features/workday/GoodMorning';
 import DayzIntlProvider from './lang/DayzIntlProvider';
 import DayzThemeProvider from './theming/DayzThemeProvider';
 import {QueryClient, QueryClientProvider} from 'react-query';
+import DayOverview from './features/workday/DayOverview';
 
 /**
  * Main App Compnent
@@ -25,6 +26,7 @@ function App() {
               <Route path="/" element={<AppLayout/>}>
                 <Route index element={<Navigate replace to="/home" />} />
                 <Route path="/home" element={<GoodMorning/>} />
+                <Route path="/dayoverview" element={<DayOverview/>} />
               </Route>
             </Routes>
           </BrowserRouter>
