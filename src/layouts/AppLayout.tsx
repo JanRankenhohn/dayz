@@ -1,5 +1,5 @@
 import {Outlet} from 'react-router';
-import MenuAppBar from '../features/navigation/MenuBar';
+import MenuAppBar from '../features/navigation/MenuAppBar';
 /**
  * App Layout
  * Includes AppBar

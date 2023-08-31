@@ -1,6 +1,7 @@
 import {Button, Grid, Typography} from '@mui/material';
 import {FormattedMessage, useIntl} from 'react-intl';
 import usePixbayImages from '../../hooks/usePixbayImages';
+import {Link} from 'react-router-dom';
 
 /**
  * Includes Good Morning view for authenticated user
@@ -25,20 +26,19 @@ const GoodMorning = () => {
     <>
       <Grid
         container
-        spacing={0}
         direction="column"
         alignItems="start"
         justifyContent="center"
-        sx={{minHeight: '150px', px: 3}}
+        sx={{py: 5, px: 3}}
       >
         <Grid item xs={12}>
           <Typography variant='h2'>
-            <FormattedMessage id="greeting" />Jan!
+            <FormattedMessage id="greeting" />
           </Typography>
         </Grid>
       </Grid>
       <Grid container>
-        <Grid item>
+        <Grid item maxHeight={'330px'} overflow={'hidden'}>
           <img src={randomImage.webformatURL} width={'100%'}></img>
         </Grid>
       </Grid>
@@ -48,7 +48,7 @@ const GoodMorning = () => {
         direction="column"
         alignItems="center"
         justifyContent="center"
-        sx={{px: 3, mt: 0}}
+        sx={{px: 3, mt: 1}}
       >
         <Grid item xs={12}>
           <Typography variant="h3">
@@ -58,17 +58,21 @@ const GoodMorning = () => {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Button variant="contained" size="large">
-            {remainingMinutes <= 0 ?
+          <Link to="/DayOverview">
+            <Button variant="contained" size="large">
+              {remainingMinutes <= 0 ?
               intl.formatMessage({id: 'startMyDayButtonText'}) :
               intl.formatMessage({id: 'startMyDayNowButtonText'})
-            }
-          </Button>
+              }
+            </Button>
+          </Link>
         </Grid>
         <Grid item xs={12}>
-          <Button variant="outlined" size="small" color="secondary">
-            {intl.formatMessage({id: 'openTimesheetButtonText'})}
-          </Button>
+          <Link to="/DayOverview">
+            <Button variant="outlined" size="small" color="secondary">
+              {intl.formatMessage({id: 'openTimesheetButtonText'})}
+            </Button>
+          </Link>
         </Grid>
       </Grid>
     </>

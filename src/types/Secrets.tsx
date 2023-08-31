@@ -1,5 +1,5 @@
 type Secrets = {
-  apiKey: string
+  pixbayApiKey: string
 }
 
 export default Secrets;
