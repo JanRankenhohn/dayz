@@ -20,7 +20,8 @@ const enUS = {
   doneNavText: 'Done',
   toDoNavText: 'To Dos',
   startChipText: 'Start',
-  linkChipText: 'Link',
+  linkText: 'Link',
+  doneButtonText: 'Set to done',
   addLinkText: 'Add link',
   newWorkItemText: 'New Work Item',
   addDescriptionPlaceholder: 'Enter your work description here...',
@@ -30,6 +31,7 @@ const enUS = {
   haveABreakText: 'Have a break!',
   minutesDoneText: 'minutes done',
   continueWorkText: 'Continue work',
+  startText: 'Start',
 };
 
 export default enUS;

@@ -20,7 +20,8 @@ const deDE = {
   doneNavText: 'Done',
   toDoNavText: 'To Dos',
   startChipText: 'Start',
-  linkChipText: 'Link',
+  doneButtonText: 'Erledigt',
+  linkText: 'Link',
   addLinkText: 'Link hinzufügen',
   newWorkItemText: 'Neues Work Item',
   addDescriptionPlaceholder: 'Tippen Sie, um eine Beschreibung hizuzufügen..',
@@ -30,6 +31,7 @@ const deDE = {
   haveABreakText: 'Zeit für eine Pause!',
   minutesDoneText: 'Minuten erledigt',
   continueWorkText: 'Arbeit fortsetzen',
+  startText: 'Starten',
 };
 
 export default deDE;

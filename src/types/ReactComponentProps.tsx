@@ -5,6 +5,7 @@ import {ReactNode} from 'react';
  */
 type ReactComponentProps = {
   children: ReactNode;
+  borderColor?: string,
 };
 
 export default ReactComponentProps;

@@ -2,21 +2,22 @@ import {WorkItemCardList} from '.';
 import {WorkItemStates} from '../../constants/constants';
 import useTodayWorkItemsUpdate from '../../hooks/useTodayWorItemsUpdate';
 
-const Done = () => {
+const ToDo = () => {
   const {isLoading, isError, data} = useTodayWorkItemsUpdate();
 
   if (isLoading) return <>Loading</>;
   if (isError) return <>Error</>;
 
-  const doneWorkItems = data?.filter((e) => e.state === WorkItemStates.DONE);
+  const todoWorkItems = data?.filter((e) => e.state === WorkItemStates.TODO ||
+    e.state == WorkItemStates.DOING);
 
   return (
     <>
       {
-        doneWorkItems && <WorkItemCardList workItems={doneWorkItems} />
+        todoWorkItems && <WorkItemCardList workItems={todoWorkItems} />
       }
     </>
   );
 };
 
-export default Done;
+export default ToDo;

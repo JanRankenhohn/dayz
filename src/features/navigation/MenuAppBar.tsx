@@ -30,9 +30,9 @@ const MenuAppBar = (props: MenuBarProps) => {
 
   return (
     <Box sx={{flexGrow: 1}}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} textAlign={'center'}>
             <Grid item xs={2}>
               {icon &&
             <IconButton
@@ -63,6 +63,7 @@ const MenuAppBar = (props: MenuBarProps) => {
                     aria-haspopup="true"
                     onClick={handleMenu}
                     color="inherit"
+                    edge="end"
                   >
                     <AccountCircle />
                   </IconButton>
@@ -90,6 +91,7 @@ const MenuAppBar = (props: MenuBarProps) => {
           </Grid>
         </Toolbar>
       </AppBar>
+      <Box sx={{mt: 9}}></Box>
     </Box>
   );
 };

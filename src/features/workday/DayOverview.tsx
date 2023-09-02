@@ -16,12 +16,14 @@ const DayOverview = () => {
 
   return (
     <>
-      <Grid container spacing={3} justifyContent="center" sx={{mt: 2}}>
+      <Grid container spacing={1} justifyContent="center" sx={{mt: 2}}>
         <Grid item>
           <Typography variant="h5">
             {intl.formatMessage({id: 'yourDay'})}
           </Typography>
         </Grid>
+      </Grid>
+      <Grid container spacing={3} justifyContent="center" sx={{mt: 0}}>
         <Grid item xs={12}>
           <Divider variant="middle" />
         </Grid>
