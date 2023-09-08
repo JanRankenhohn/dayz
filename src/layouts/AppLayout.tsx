@@ -1,5 +1,6 @@
 import {Outlet} from 'react-router';
 import MenuAppBar from '../features/navigation/MenuAppBar';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 /**
  * App Layout
  * Includes AppBar
@@ -8,7 +9,7 @@ import MenuAppBar from '../features/navigation/MenuAppBar';
 export default function AppLayout() {
   return (
     <>
-      <MenuAppBar />
+      <MenuAppBar icon={<ArrowBackIcon />} />
       <Outlet />
     </>
   );

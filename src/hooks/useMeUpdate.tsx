@@ -8,7 +8,6 @@ function useMeUpdate() {
   const {isError, isSuccess, isLoading, data, error, refetch} = useQuery('me', () =>
     fetchMe(),
   {
-    // 1 Day Caching
     staleTime: 10000,
     refetchInterval: 10000,
     cacheTime: 10000,

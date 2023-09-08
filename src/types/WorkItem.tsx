@@ -5,6 +5,9 @@ type WorkItem = {
   description: string,
   targetTimeStamp: number,
   state: number,
+  removable?: boolean,
+  shiftable?: boolean,
+  startable?: boolean,
 }
 
 export default WorkItem;

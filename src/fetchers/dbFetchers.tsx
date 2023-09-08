@@ -38,7 +38,7 @@ export async function fetchReviewWorkItems() {
   const data: WorkItem[] = [
     {
       id: 1,
-      name: 'Task 1',
+      name: 'Rveiw task 1',
       type: 0,
       description: 'Description for Work Item 1',
       targetTimeStamp: 1693377425,
@@ -46,19 +46,43 @@ export async function fetchReviewWorkItems() {
     },
     {
       id: 2,
-      name: 'Task 2',
+      name: 'Review task 2',
       type: 0,
       description: 'Description for Work Item 2',
       targetTimeStamp: 1693376425,
       state: 1,
     },
     {
-      id: 2,
-      name: 'Meeting 1',
+      id: 3,
+      name: 'Review Meeting 1',
       type: 0,
       description: 'Description for Work Item 3',
       targetTimeStamp: 1693374425,
-      state: 1,
+      state: 2,
+    },
+    {
+      id: 4,
+      name: 'Review Meeting 1',
+      type: 0,
+      description: 'Description for Work Item 3',
+      targetTimeStamp: 1693374425,
+      state: 4,
+    },
+    {
+      id: 5,
+      name: 'Review Meeting 1',
+      type: 0,
+      description: 'Description for Work Item 3',
+      targetTimeStamp: 1693374425,
+      state: 4,
+    },
+    {
+      id: 6,
+      name: 'Review Meeting 1',
+      type: 0,
+      description: 'Description for Work Item 3',
+      targetTimeStamp: 1693374425,
+      state: 5,
     },
   ];
 
@@ -83,7 +107,7 @@ export async function fetchTodayWorkItems() {
       name: 'Task 1',
       type: 0,
       description: 'Description for Work Item 1',
-      targetTimeStamp: 1693377425,
+      targetTimeStamp: 1693748296,
       state: 0,
     },
     {
@@ -91,7 +115,7 @@ export async function fetchTodayWorkItems() {
       name: 'Task 2',
       type: 0,
       description: 'Description for Work Item 2',
-      targetTimeStamp: 1693376425,
+      targetTimeStamp: 1693748296,
       state: 1,
     },
     {
@@ -99,8 +123,32 @@ export async function fetchTodayWorkItems() {
       name: 'Meeting 1',
       type: 0,
       description: 'Description for Work Item 3',
+      targetTimeStamp: 1693748296,
+      state: 2,
+    },
+    {
+      id: 4,
+      name: 'Review Meeting 1',
+      type: 0,
+      description: 'Description for Work Item 3',
       targetTimeStamp: 1693374425,
       state: 2,
+    },
+    {
+      id: 5,
+      name: 'Review Meeting 1',
+      type: 0,
+      description: 'Description for Work Item 3',
+      targetTimeStamp: 1693374425,
+      state: 4,
+    },
+    {
+      id: 6,
+      name: 'Review Meeting 1',
+      type: 0,
+      description: 'Description for Work Item 3',
+      targetTimeStamp: 1693374425,
+      state: 5,
     },
   ];
 
